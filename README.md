@@ -32,6 +32,7 @@ For example `python opencv_object_tracking.py --video casting_test.mp4 --model c
 Output:
 
 ![Alt text](screenshot_inference.png "Title")
+
 5) This script can be also used for image classification with input from a connected camera with the command:` python opencv_object_tracking.py`
 
 ### This repository was developed in the scope of H2020 AI REGIO project. 
