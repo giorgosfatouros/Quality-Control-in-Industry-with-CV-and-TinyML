@@ -26,7 +26,7 @@ Moreover, there is a python script `opencv_object_tracking.py` that allows the r
 
 The trained TFLite models can be used in practice to embedded devices based on Linux, such as Raspberry Pi and Coral devices with Edge TPU, among many others with the following steps:
 1) `pip install requirements.txt` 
-2) For local testing the repo includes the `casting_test.mp4` video that was created from the test images of the dataset with 1 FPS. To check a TFLite model on that video run in the terminal : `python opencv_object_tracking.py --video casting_test.mp4`. You can specify the model that will be used for inference with the `--model` flag (The model should be stored inside the `saved_models` folder). 
+2) For local testing the repo includes the `casting_test.mp4` video that was created from the test images of the dataset with 1 FPS. To check a TFLite model on that video run (from reposiory path) in the terminal: `python opencv_object_tracking.py --video casting_test.mp4`. You can specify the model that will be used for inference with the `--model` flag (The model should be stored inside the `saved_models` folder). 
 For example `python opencv_object_tracking.py --video casting_test.mp4 --model cnn_model.tflite`
 3) When the video opens, press `s` to select the area of the frame that will be the input of the image classifier. This process is required only at the beginning to calibrate the tracker. Output: ![Alt text](screenshot_inference.png "Title")
 4) This script can be also used for image classification with input from a connected camera with the command:` python opencv_object_tracking.py`
